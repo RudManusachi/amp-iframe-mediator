@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <iframe height="250px" src="https://rudolfman.github.io/AnimatedDisplayAdDemo/" frameborder="0"></iframe>
+
+  <script>
+    window.addEventListener("message", function (evnt) {
+      if (evnt.origin == "https://rudolfman.github.io") {
+        console.log(evnt.data)
+      }
+    })
+  </script>
+</body>
+
+</html>

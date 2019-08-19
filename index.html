@@ -15,6 +15,7 @@
     window.addEventListener("message", function (evnt) {
       if (evnt.origin == "https://rudolfman.github.io") {
         console.log(evnt.data)
+        window.open("https://yahoo.com", "_blank")
       }
     })
   </script>

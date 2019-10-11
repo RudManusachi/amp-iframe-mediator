@@ -2,6 +2,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
+<script>
+(function() {
+var v = location.search.substr(1);
+if (!(/^\d+(-canary)?$/.test(v))) return;
+var u = 'https://3p.ampproject.net/'+encodeURIComponent(v)+'/f.js';
+document.write('<script'+' src="'+encodeURI(u)+'"><'+'/script>'); // lgtm [js/eval-like-call]
+})();
+</script>
 <script src="https://3p.ampproject.net/1910071804120/f.js"></script>
 </head>
 <body style="margin:0">
@@ -12,6 +20,8 @@
       done(config)
     }, ['custom-type-ad'], ['rudmanusachi.github.io']);
   </script>
+
+  <div> MY AD </div>
 </div>
 <script>if (window.docEndCallback) window.docEndCallback()</script>
 </body>
